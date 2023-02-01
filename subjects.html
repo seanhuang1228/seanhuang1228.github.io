@@ -1,0 +1,15 @@
+---
+layout: default
+title: Subject
+permalink: /subjects/
+---
+<h1>Subject List</h1>
+
+<ul>
+  {% for subject in site.subjects %}
+    <li>
+      <h2><a href="{{ subject.url }}">{{ subject.name }}</a></h2>
+      <p2>{{ subject.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
